@@ -3,7 +3,7 @@ This is a repo containing files related to keypoint prediction and video generat
 
 GRU-NF_keypoints.ipynb is used to train the GRU-NF model and apply the trained model on test data. The resulting keypoints are saved in pkl file and video_inference.py is used to generate videos from the keypoints. GRU-SNF_keypoints.ipynb is used to apply the same trained GRU-NF model on test data and to save the resulting keypoints. Similarly, video_inference.py is used to generate videos from the keypoints.
 
-To run each of 44 videos parallely to get 100 samples from each, we ran sharded jobs. The necessary files are in this link: https://gitlab.nrp-nautilus.io/byungheon-jeong/first-order-model-distributed/-/tree/parallel/training-infra
+To run each of 44 videos of test data parallely to get 100 samples from each, we ran sharded jobs. The necessary files are in this link: https://gitlab.nrp-nautilus.io/byungheon-jeong/first-order-model-distributed/-/tree/parallel/training-infra
 (Change the pkl file as needed)
 
 The script is run like this: 
