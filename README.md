@@ -3,16 +3,7 @@ This is a repo containing files related to keypoint prediction and video generat
 
 GRU-NF_keypoints.ipynb is used to train the GRU-NF model and apply the trained model on test data. The resulting keypoints are saved in pkl file and video_inference.py is used to generate videos from the keypoints. GRU-SNF_keypoints.ipynb is used to apply the same trained GRU-NF model on test data and to save the resulting keypoints. Similarly, video_inference.py is used to generate videos from the keypoints.
 
-To run each of 44 videos of test data parallely to get 100 samples from each, we ran sharded jobs. The necessary files are in this link: https://gitlab.nrp-nautilus.io/byungheon-jeong/first-order-model-distributed/-/tree/parallel/training-infra
-(Change the pkl file as needed)
-
-The script is run like this: 
-python3 job_generator.py --number_of_shard 44 --path_to_ptk_file GRU-NF_vox8-16_test_video_unstd_list_100.pkl --path_to_yaml_template core_template.yaml
-
-When the yaml is generated, execute:
-<kubectl create -f job_yaml>
-to start the sharded jobs.
-
+To run each of 44 videos of test data parallely to get 100 samples from each, we ran sharded jobs.
 MAE_APD.py is used to compute the MAE and APD of the generated videos. Save the results in a log file to use the file to compute APD to MAE ratio.
 
 
