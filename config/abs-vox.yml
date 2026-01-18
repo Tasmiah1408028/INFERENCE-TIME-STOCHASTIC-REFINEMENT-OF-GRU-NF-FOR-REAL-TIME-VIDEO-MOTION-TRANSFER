@@ -1,5 +1,5 @@
 dataset_params:
-  root_dir: /home/jovyan/srinjoy-vol/Tasmiah_files/Motion-Transfer-Keypoints-Prediction/Keypoints_Prediction/Training_Prediction/FOMM/datasets/voxceleb
+  root_dir: ./FOMM/datasets/voxceleb
   frame_shape: [256, 256, 3]
   id_sampling: False
   augmentation_params:
