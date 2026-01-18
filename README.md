@@ -1,5 +1,5 @@
 ## Description of the repository:
-This is a repo containing files related to keypoint prediction and video generation using GRU-NF in the First Order Motion Model (FOMM) pipeline.
+This is a repo containing files related to keypoint prediction and video generation using GRU-NF and GRU-SNF in the First Order Motion Model (FOMM) pipeline.
 
 GRU-NF_keypoints.ipynb is used to train the GRU-NF model and apply the trained model on test data. The resulting keypoints are saved in pkl file and video_inference.py is used to generate videos from the keypoints. GRU-SNF_keypoints.ipynb is used to apply the same trained GRU-NF model on test data and to save the resulting keypoints. Similarly, video_inference.py is used to generate videos from the keypoints.
 
